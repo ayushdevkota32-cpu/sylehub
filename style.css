@@ -1,8 +1,6 @@
-/* =====================
-   Base Layout Utilities
-   ===================== */
+
 .w-layout-layout {
-    display: grid;                  /* FIX: was missing — grids won't work without this */
+    display: grid;                  
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     grid-auto-columns: 1fr;
@@ -61,7 +59,7 @@ body {
     margin: 0 auto;
 }
 .brand {
-    background-image: url(Group-4.svg);     /* FIX: was ../image/Group-4.svg — use relative path */
+    background-image: url(Group-4.svg);     
     background-position: 50%;
     background-size: 100% 100%;
     width: 50px;
@@ -131,7 +129,7 @@ body {
    Stats / Trust Section
    ===================== */
 .trust {
-    grid-template-columns: 1fr;  /* FIX: override to single column since cell-4 holds the row */
+    grid-template-columns: 1fr;  
     padding: 0;
 }
 .cell-4 {
@@ -268,7 +266,7 @@ body {
 /* =====================
    Reviews Section
    ===================== */
-.reviews-heading {            /* FIX: was .Reviews-heading (capital R) — didn't match CSS */
+.reviews-heading {            
     text-align: center;
     font-size: 50px;
     margin: 40px 0 20px;
