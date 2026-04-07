@@ -1,0 +1,544 @@
+/* =====================
+   Base Layout Utilities
+   ===================== */
+.w-layout-layout {
+    display: grid;                  /* FIX: was missing — grids won't work without this */
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    padding: 20px;
+}
+.w-layout-cell {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.w-layout-blockcontainer {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+@media screen and (max-width: 991px) {
+    .w-layout-blockcontainer {
+        max-width: 728px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .w-layout-blockcontainer {
+        max-width: none;
+    }
+}
+
+/* =====================
+   Global / Body
+   ===================== */
+body {
+    font-family: jura, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =====================
+   Navbar
+   ===================== */
+.navbar {
+    font-family: jura, sans-serif;
+    background-color: #fdfcfc;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.navbar .w-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.brand {
+    background-image: url(Group-4.svg);     /* FIX: was ../image/Group-4.svg — use relative path */
+    background-position: 50%;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.nav-menu {
+    display: flex;
+    gap: 16px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.nav-link:hover {
+    color: #3248b7;
+}
+.menu-button {
+    display: none;
+}
+
+/* =====================
+   Hero Section
+   ===================== */
+.hero.page {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 60px 40px;
+}
+.hero-heading {
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 100px;
+    padding-top: 0;
+}
+.hero-heading-2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    margin-top: 40px;
+    object-fit: fill;
+}
+.cta-1 {
+    color: #fff;
+    background-color: #000;
+    border-radius: 24px;
+    margin-top: 20px;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.cta-1:hover {
+    background-color: #3248b7;
+}
+
+/* =====================
+   Stats / Trust Section
+   ===================== */
+.trust {
+    grid-template-columns: 1fr;  /* FIX: override to single column since cell-4 holds the row */
+    padding: 0;
+}
+.cell-4 {
+    background-color: #2d2626;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px;
+}
+.text-block {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.image-5 {
+    width: 30px;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px;
+}
+.container-3-copy {
+    text-align: center;
+    padding: 10px;
+}
+
+/* =====================
+   Services Section
+   ===================== */
+.service.heading {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+.heading-5 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.text-block-2 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#w-node-_32e1f92a {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 40px;
+}
+.text-block-3,
+.text-block-4,
+.text-block-5 {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =====================
+   About / Our Story Section
+   ===================== */
+#w-node-_32e1f92a-56f305c7-000000000000 {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 40px;
+}
+.cell-6 img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.cell-5 {
+    padding-left: 30px;
+}
+.heading-6 {
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: #3248b7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.heading-7 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.text-block-6 {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+.text-block-7 {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* =====================
+   Founders Section
+   ===================== */
+.founders.heading {
+    padding: 40px 20px;
+    background-color: #d4d3d3;
+    text-align: center;
+}
+.heading-8 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.founders-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.container-5 {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-block-9,
+.text-block-10,
+.text-block-11 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =====================
+   Reviews Section
+   ===================== */
+.reviews-heading {            /* FIX: was .Reviews-heading (capital R) — didn't match CSS */
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 20px;
+}
+#w-node-_32e1f92a-56f305c7-000000000001 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.reviews {
+    font-family: k2d, sans-serif;
+}
+.block-quote,
+.block-quote-2,
+.block-quote-3,
+.block-quote-4,
+.block-quote-5,
+.block-quote-6 {
+    font-family: k2d, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.6;
+    border-left: 3px solid #3248b7;
+    padding-left: 16px;
+    margin: 0;
+}
+.text-span-2 {
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* =====================
+   Contact Promo Section
+   ===================== */
+.contact-promo {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+.heading-10 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.text-box-12 {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* =====================
+   Contact Form Section
+   ===================== */
+#w-node-_32e1f92a-56f305c7-000000000002 {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 40px 40px;
+}
+.cell-7 {
+    width: 100%;
+}
+.w-form {
+    width: 100%;
+}
+.w-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.w-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: jura, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+textarea.w-input {
+    min-height: 120px;
+    resize: vertical;
+}
+.field-label,
+.field-label-2,
+.field-label-3,
+.field-label-4 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.submit-button,
+input[type="submit"].w-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 8px;
+    font-family: jura, sans-serif;
+}
+.submit-button:hover,
+input[type="submit"].w-button:hover {
+    background-color: #3248b7;
+}
+.w-form-success,
+.w-form-fail {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* =====================
+   Footer
+   ===================== */
+.footer {
+    margin-top: 40px;
+}
+.quick-stack-3 {
+    background-color: #000;
+    grid-template-columns: 1fr;
+    padding: 30px 40px;
+}
+#w-node-64 {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 20px;
+    color: #fff;
+}
+.heading-11 {
+    color: #fff;
+    font-family: k2d, sans-serif;
+    font-size: 24px;
+}
+.text-span-8 {
+    color: #3248b7;
+}
+.text-block-15 {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 8px;
+}
+.heading-12 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.text-block-16 {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* =====================
+   Accent Color
+   ===================== */
+.text-span {
+    color: #3248b7;
+}
+
+/* =====================
+   Responsive — Tablet (≤991px)
+   ===================== */
+@media screen and (max-width: 991px) {
+    .hero.page {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+    .hero-image {
+        display: none;
+    }
+    .hero-heading {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 20px;
+    }
+    .hero-heading-2 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .cta-1 {
+        margin-left: 0;
+    }
+    #w-node-_32e1f92a {
+        grid-template-columns: 1fr;
+    }
+    #w-node-_32e1f92a-56f305c7-000000000000 {
+        grid-template-columns: 1fr;
+    }
+    .cell-6 {
+        display: none;
+    }
+    #w-node-_32e1f92a-56f305c7-000000000001 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* =====================
+   Responsive — Mobile (≤767px)
+   ===================== */
+@media screen and (max-width: 767px) {
+    .brand {
+        margin-left: 5px;
+    }
+    .hero-heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .hero-heading-2 {
+        font-size: 13px;
+    }
+    .cell-4 {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .heading-5 {
+        font-size: 40px;
+    }
+    #w-node-_32e1f92a-56f305c7-000000000001 {
+        grid-template-columns: 1fr;
+    }
+    .founders-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #w-node-64 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================
+   Responsive — Small Mobile (≤479px)
+   ===================== */
+@media screen and (max-width: 479px) {
+    .navbar {
+        background-color: #fdfcfc;
+    }
+    .hero-heading {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .hero-heading-2 {
+        font-size: 11px;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+    .cta-1 {
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+    .text-block {
+        font-size: 9px;
+        line-height: 14px;
+    }
+    .heading-5 {
+        font-size: 30px;
+    }
+    .reviews-heading {
+        font-size: 28px;
+    }
+    .heading-10 {
+        font-size: 26px;
+    }
+    .quick-stack-3 {
+        padding: 20px;
+    }
+}
