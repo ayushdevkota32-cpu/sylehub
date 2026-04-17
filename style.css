@@ -30,18 +30,14 @@
     }
 }
 
-/* =====================
-   Global / Body
-   ===================== */
+/* Global / Body*/
 body {
     font-family: jura, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* =====================
-   Navbar
-   ===================== */
+/* Navbar */
 .navbar {
     font-family: jura, sans-serif;
     background-color: #fdfcfc;
@@ -85,9 +81,7 @@ body {
     display: none;
 }
 
-/* =====================
-   Hero Section
-   ===================== */
+/* Hero Section */
 .hero.page {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -125,9 +119,7 @@ body {
     background-color: #3248b7;
 }
 
-/* =====================
-   Stats / Trust Section
-   ===================== */
+/*Stats / Trust Section */
 .trust {
     grid-template-columns: 1fr;  
     padding: 0;
@@ -157,9 +149,7 @@ body {
     padding: 10px;
 }
 
-/* =====================
-   Services Section
-   ===================== */
+/*Services Section */
 .service.heading {
     text-align: center;
     padding: 40px 20px 10px;
@@ -187,9 +177,7 @@ body {
     line-height: 1.5;
 }
 
-/* =====================
-   About / Our Story Section
-   ===================== */
+/* About / Our Story Section */
 #w-node-_32e1f92a-56f305c7-000000000000 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -227,9 +215,7 @@ body {
     margin-top: 20px;
 }
 
-/* =====================
-   Founders Section
-   ===================== */
+/* Founders Section */
 .founders.heading {
     padding: 40px 20px;
     background-color: #d4d3d3;
@@ -263,9 +249,7 @@ body {
     line-height: 1.5;
 }
 
-/* =====================
-   Reviews Section
-   ===================== */
+/*Reviews Section */
 .reviews-heading {            
     text-align: center;
     font-size: 50px;
@@ -299,9 +283,7 @@ body {
     color: #555;
 }
 
-/* =====================
-   Contact Promo Section
-   ===================== */
+/*Contact Promo Section */
 .contact-promo {
     text-align: center;
     padding: 60px 20px 20px;
@@ -318,9 +300,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* =====================
-   Contact Form Section
-   ===================== */
+/* Contact Form Section */
 #w-node-_32e1f92a-56f305c7-000000000002 {
     grid-template-columns: 1fr;
     max-width: 600px;
@@ -383,9 +363,7 @@ input[type="submit"].w-button:hover {
     font-size: 14px;
 }
 
-/* =====================
-   Footer
-   ===================== */
+/* Footer */
 .footer {
     margin-top: 40px;
 }
@@ -424,16 +402,12 @@ input[type="submit"].w-button:hover {
     line-height: 1.8;
 }
 
-/* =====================
-   Accent Color
-   ===================== */
+/* Accent Color*/
 .text-span {
     color: #3248b7;
 }
 
-/* =====================
-   Responsive — Tablet (≤991px)
-   ===================== */
+/* Responsive — Tablet (≤991px) */
 @media screen and (max-width: 991px) {
     .hero.page {
         grid-template-columns: 1fr;
@@ -468,9 +442,7 @@ input[type="submit"].w-button:hover {
     }
 }
 
-/* =====================
-   Responsive — Mobile (≤767px)
-   ===================== */
+/*Responsive — Mobile (≤767px) */
 @media screen and (max-width: 767px) {
     .brand {
         margin-left: 5px;
@@ -502,9 +474,7 @@ input[type="submit"].w-button:hover {
     }
 }
 
-/* =====================
-   Responsive — Small Mobile (≤479px)
-   ===================== */
+/* Responsive — Small Mobile (≤479px) */
 @media screen and (max-width: 479px) {
     .navbar {
         background-color: #fdfcfc;
